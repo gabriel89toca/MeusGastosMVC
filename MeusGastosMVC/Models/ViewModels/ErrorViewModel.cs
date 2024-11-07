@@ -1,6 +1,6 @@
 using System;
 
-namespace MeusGastosMVC.Models
+namespace MeusGastosMVC.Models.ViewModels
 {
     public class ErrorViewModel
     {

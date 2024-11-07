@@ -1,4 +1,4 @@
-﻿using MeusGastosMVC.Models;
+﻿using MeusGastosMVC.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
