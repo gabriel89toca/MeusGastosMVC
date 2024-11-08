@@ -37,7 +37,9 @@ namespace MeusGastosMVC
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddDbContext<MeusGastosMVCContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("MeusGastosMVCContext")));
+                    options.UseMySql(Configuration.GetConnectionString("MeusGastosMVCContext"), builder =>
+                        builder.MigrationsAssembly("MeusGastosMVC")));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
