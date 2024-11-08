@@ -20,18 +20,18 @@ namespace MeusGastosMVC.Controllers
         }
 
         // GET: Categories
-        //public async Task<IActionResult> Index()
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
+        //public IActionResult Index()
         {
-            List<Category> categorias = new List<Category>();
+            //List<Category> categorias = new List<Category>();
 
-            categorias.Add(new Category { Id = 0, Name = "Mercado" });
-            categorias.Add(new Category { Id = 0, Name = "Transporte" });
-            categorias.Add(new Category { Id = 0, Name = "Contas" });
+            //categorias.Add(new Category { Id = 0, Name = "Mercado" });
+            //categorias.Add(new Category { Id = 0, Name = "Transporte" });
+            //categorias.Add(new Category { Id = 0, Name = "Contas" });
 
 
-            return View(categorias);
-            //return View(await _context.Category.ToListAsync());
+           // return View(categorias);
+            return View(await _context.Category.ToListAsync());
         }
 
         // GET: Categories/Details/5
